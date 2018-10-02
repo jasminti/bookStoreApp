@@ -39,3 +39,33 @@ footer{
     background: #f8f9fa;
     height: 100px;
 }
+.carousel-control-prev-icon {
+    height: 50px;
+    width: 50px;
+    background: white;
+    position: relative;
+    right: 83px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1)
+}
+.arrow-custom-previous{
+    font-size: 40px;
+    color: black;
+    margin-top: 5px;
+    margin-right: 6px;
+}
+.carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    background: white;
+    position: relative;
+    left: 75px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1)
+}
+.arrow-custom-next{
+    font-size: 40px;
+    color: black;
+    margin-top: 5px;
+    margin-right: 0px;
+}
