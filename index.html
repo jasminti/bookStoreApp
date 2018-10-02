@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="bookStoreApp">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Book Store App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+    <div class="main-page-content container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Logo</a>
+            
+            <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col">
+                <div ngbDropdown class="d-inline-block">
+                    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                        <button class="dropdown-item">Action - 1</button>
+                        <button class="dropdown-item">Another Action</button>
+                        <button class="dropdown-item">Something else is here</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="book-cover-design">
+            <a href="#"><img src="images/book01.jpg" alt=""></a>
+            <a href="#"><img src="images/book02.jpg" alt=""></a>
+            <a href="#"><img src="images/book03.jpg" alt=""></a>
+            <a href="#"><img src="images/book04.jpg" alt=""></a>
+            <a href="#"><img src="images/book06.png" alt=""></a>
+            <a href="#"><img src="images/book07.jpg" alt=""></a>
+            <a href="#"><img src="images/book08.jpg" alt=""></a>
+            <a href="#"><img src="images/book09.jpg" alt=""></a>
+            <a href="#"><img src="images/book10.jpg" alt=""></a>
+            <a href="#"><img src="images/book13.jpg" alt=""></a>
+        </section>
+        <section class="second-book-content">
+            <button class="btn btn-secondary my-2 my-sm-0">New Releases</button>
+            <button class="btn btn-secondary my-2 my-sm-0">Authors</button>
+            <button class="btn btn-secondary my-2 my-sm-0">Top 10</button>
+        </section>
+
+        <div ng-controller="CarouselDemoCtrl">
+            <div style="height: 305px">
+                <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                    <img ng-src="images/book07.jpg" style="margin:auto;">
+                    <div class="carousel-caption">
+                    <h4>Slide {{slide.id}}</h4>
+                    <p>{{slide.text}}</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

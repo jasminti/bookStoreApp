@@ -1,0 +1,20 @@
+.order-filter-nav {
+    margin-top: 20px;
+}
+.book-cover-design {
+    float: left;
+    margin-top: 20px;
+}
+.book-cover-design img {
+    width: 19%;
+}
+.book-cover-design a:hover {
+    transition: all .7s;
+    background: tomato;
+}
+.second-book-content {
+    margin-top: 20px;
+}
+.btn-wrapper {
+    text-align: right;
+}
