@@ -1,9 +1,13 @@
+body {
+    /*font-family: Lato;
+    font-size: 14px;*/
+}
 .order-filter-nav {
     margin-top: 20px;
 }
 .book-cover-design {
     float: left;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 .book-cover-design img {
     width: 19%;
@@ -17,4 +21,21 @@
 }
 .btn-wrapper {
     text-align: right;
+}
+.btn-wrapper2 {
+    margin-top: 20px;
+    text-align: center;
+}
+.dropdown-row {
+    margin-top: 20px;
+}
+.carousel {
+    margin: 20px 0;
+}
+.card-img-top {
+    height: 393px;
+}
+footer{
+    background: #f8f9fa;
+    height: 100px;
 }
