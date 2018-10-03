@@ -1,4 +1,4 @@
-var app = angular.module('bookStoreApp', ['ngRoute']);
+var app = angular.module('bookStoreApp', ['ngRoute', 'ui.bootstrap']);
 
 users = [
     {

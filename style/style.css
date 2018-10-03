@@ -1,6 +1,15 @@
 body {
-    /*font-family: Lato;
-    font-size: 14px;*/
+    /*font-family: Lato;*/
+    font-size: 14px;
+    background: #f9f9f9;
+}
+.navbar {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.08);
+    background: white;
+}
+.custom-form {
+    text-align: right;
+    margin-top: 7px;
 }
 .order-filter-nav {
     margin-top: 20px;
