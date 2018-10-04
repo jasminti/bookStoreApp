@@ -27,6 +27,14 @@ currentUser = {};
 
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
+        .when('/usernavbar', {
+            templateUrl: 'view/usernavbar.html',
+            controller: 'userNavbarCtrl'
+        })
+        .when('/userpage', {
+            templateUrl: 'view/userpage.html',
+            controller: 'userPageCtrl'
+        })
         .when('/wishlist', {
             templateUrl: 'view/wishlist.html',
             controller: 'wishListCtrl'

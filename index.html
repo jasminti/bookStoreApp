@@ -20,24 +20,17 @@
     <script src="scripts/ctrl/signup.ctrl.js"></script>
     <script src="scripts/ctrl/shopingcart.ctrl.js"></script>
     <script src="scripts/ctrl/wishlist.ctrl.js"></script>
+    <script src="scripts/ctrl/home.ctrl.js"></script>
+    <script src="scripts/ctrl/userpage.ctrl.js"></script>
 </head>
 <body>
     <div class="main-page-content container">
-
         <!-- Navbar -->
-        <nav class="navbar">
-            <a class="navbar-brand" href="#/home">Logo</a>
-            <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
-                <form class="form-inline custom-form">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
+        <ng-include src="'view/header.html'"></ng-include>
 
         <!-- Dropdown with other filters -->
         <div class="row dropdown-row">
-            <div class="btn-group col-md-2" uib-dropdown is-open="status.isopen">
+            <div class="btn-group col-md-2 p0" uib-dropdown is-open="status.isopen">
                 <button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
                     Book by Genre <span class="caret"></span>
                 </button>
@@ -57,7 +50,7 @@
                 <button class="btn btn-default">Authors</button>
                 <button class="btn btn-default">Top 10</button>
             </div>
-            <div class="col-md-4 text-right">
+            <div class="col-md-4 text-right p0">
                 <a href="#/signin">
                     <button class="btn btn-default">Login</button>
                 </a>

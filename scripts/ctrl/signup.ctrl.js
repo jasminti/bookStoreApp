@@ -6,6 +6,7 @@ app.controller('signUpCtrl', function ($scope, $location) {
             email: newUser.email,
             password: newUser.password
         });
+        console.log(newUser);
         $location.path('/home');
     }
 })

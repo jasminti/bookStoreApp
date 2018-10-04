@@ -16,8 +16,12 @@ a:hover {
     font-weight: 600;
     text-decoration: none;
 }
+/* --- General padding i margin css --- */
 .ml-10 {
     margin-left: 10px;
+}
+.p0 {
+    padding: 0;
 }
 .dropdown-menu>li>a {
     font-weight: 600;
@@ -130,5 +134,7 @@ footer{
     font-size: 2.5rem;
     margin: 0;
 }
+
+
 
 
