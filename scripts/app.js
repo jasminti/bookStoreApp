@@ -27,6 +27,14 @@ currentUser = {};
 
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
+        .when('/wishlist', {
+            templateUrl: 'view/wishlist.html',
+            controller: 'wishListCtrl'
+        })
+        .when('/shopingcart', {
+            templateUrl: 'view/shopingcart.html',
+            controller: 'shopingCartCtrl'
+        })
         .when('/signup', {
             templateUrl: 'view/signup.html',
             controller: 'signUpCtrl'

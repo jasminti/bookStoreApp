@@ -1,7 +1,26 @@
 body {
-    /*font-family: Lato;*/
     font-size: 14px;
     background: #f9f9f9;
+    font-family: Lato;
+    font-weight: 700;
+}
+h3 {
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.btn {
+    font-weight: 600;
+}
+a:hover {
+    font-weight: 600;
+    text-decoration: none;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.dropdown-menu>li>a {
+    font-weight: 600;
 }
 .navbar {
     box-shadow: 0 3px 5px 0 rgba(0,0,0,.08);
@@ -32,8 +51,7 @@ body {
     text-align: right;
 }
 .btn-wrapper2 {
-    margin-top: 20px;
-    text-align: center;
+    margin: 10px 0 20px 0;
 }
 .dropdown-row {
     margin-top: 20px;
@@ -41,40 +59,76 @@ body {
 .carousel {
     margin: 20px 0;
 }
+.card {
+    border: 1px solid darkgray;
+    border-radius: 5px;
+}
 .card-img-top {
     height: 393px;
+}
+.card-title {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 2rem;
 }
 footer{
     background: #f8f9fa;
     height: 100px;
 }
-.carousel-control-prev-icon {
-    height: 50px;
-    width: 50px;
+.users-navbar {
+    margin-top: 15px;
+    text-align: right;
+}
+.users-navbar a {
+    font-size: 28px;
+    color: #cccccc;
+}
+.users-navbar a:hover {
+    color: #9E9E9E;
+    text-decoration: none;
+}
+.picked-book {
     background: white;
-    position: relative;
-    right: 83px;
-    border-radius: 50%;
-    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1)
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.08);
+    border-radius: 5px;
+    margin:0 10px 15px 0;
 }
-.arrow-custom-previous{
-    font-size: 40px;
-    color: black;
-    margin-top: 5px;
-    margin-right: 6px;
+.picked-book-header img {
+    width: auto;
+    height: 200px;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 13px;
 }
-.carousel-control-next-icon {
-    height: 50px;
-    width: 50px;
+.picked-book-body {
+    padding-top: 20px;
+}
+.picked-book-body h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.picked-book-footer {
+    padding: 15px 0;
+}
+.custom-col-md-6 {
+    width: 48%;
+    display: inline-block;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-content {
     background: white;
-    position: relative;
-    left: 75px;
-    border-radius: 50%;
-    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1)
+    border-radius: 5px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.08);
+    padding: 20px;
+    margin-top: 20px;
 }
-.arrow-custom-next{
-    font-size: 40px;
-    color: black;
-    margin-top: 5px;
-    margin-right: 0px;
+.form-content h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin: 0;
 }
+
+
