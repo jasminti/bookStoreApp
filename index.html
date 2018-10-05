@@ -27,7 +27,7 @@
     <div class="main-page-content container">
         <!-- Navbar -->
         <ng-include src="'view/header.html'"></ng-include>
-
+        Welcome {{currentUser.name}}
         <!-- Dropdown with other filters -->
         <div class="row dropdown-row">
             <div class="btn-group col-md-2 p0" uib-dropdown is-open="status.isopen">
@@ -50,7 +50,7 @@
                 <button class="btn btn-default">Authors</button>
                 <button class="btn btn-default">Top 10</button>
             </div>
-            <div class="col-md-4 text-right p0">
+            <div class="col-md-4 text-right p0" ng-hide="currentUser">
                 <a href="#/signin">
                     <button class="btn btn-default">Login</button>
                 </a>
@@ -58,22 +58,10 @@
                     <button class="btn btn-default">Sign Up</button>
                 </a>
             </div>
+            <ng-include src="'view/usernavbar.html'">
+            </ng-include>
         </div>
         <div ng-view=""></div>
-
-        <!-- Book section -->
-        <div class="book-cover-design">
-            <a href="#/shopingcart"><img src="images/book01.jpg" alt=""></a>
-            <a href="#"><img src="images/book02.jpg" alt=""></a>
-            <a href="#"><img src="images/book03.jpg" alt=""></a>
-            <a href="#"><img src="images/book04.jpg" alt=""></a>
-            <a href="#"><img src="images/book06.png" alt=""></a>
-            <a href="#"><img src="images/book07.jpg" alt=""></a>
-            <a href="#"><img src="images/book08.jpg" alt=""></a>
-            <a href="#"><img src="images/book09.jpg" alt=""></a>
-            <a href="#"><img src="images/book11.png" alt=""></a>
-            <a href="#"><img src="images/book13.jpg" alt=""></a>
-        </div>
 
         <!-- Second Book filter section -->
         <div class="second-book-content">

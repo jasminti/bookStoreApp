@@ -27,6 +27,9 @@ currentUser = {};
 
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
+        .when('/', {
+            templateUrl: 'view/home.html'
+        })
         .when('/usernavbar', {
             templateUrl: 'view/usernavbar.html',
             controller: 'userNavbarCtrl'

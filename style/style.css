@@ -20,6 +20,9 @@ a:hover {
 .ml-10 {
     margin-left: 10px;
 }
+.mt-20 {
+    margin-top: 20px;
+}
 .p0 {
     padding: 0;
 }
@@ -134,7 +137,13 @@ footer{
     font-size: 2.5rem;
     margin: 0;
 }
-
+.tab-content {
+    background: white;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 20px;
+}
 
 
 
