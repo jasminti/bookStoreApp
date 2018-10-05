@@ -27,7 +27,7 @@
     <div class="main-page-content container">
         <!-- Navbar -->
         <ng-include src="'view/header.html'"></ng-include>
-        Welcome {{currentUser.name}}
+        <div class="current-user-msg" ng-show="currentUser"><h4>Welcome back, {{currentUser.name}}</h4></div>
         <!-- Dropdown with other filters -->
         <div class="row dropdown-row">
             <div class="btn-group col-md-2 p0" uib-dropdown is-open="status.isopen">

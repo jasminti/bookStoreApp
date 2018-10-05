@@ -61,7 +61,7 @@ a:hover {
     margin: 10px 0 20px 0;
 }
 .dropdown-row {
-    margin-top: 20px;
+    margin: 20px 0;
 }
 .carousel {
     margin: 20px 0;
@@ -83,7 +83,6 @@ footer{
     height: 100px;
 }
 .users-navbar {
-    margin-top: 15px;
     text-align: right;
 }
 .users-navbar a {
@@ -143,6 +142,10 @@ footer{
     border-bottom: 1px solid lightgray;
     border-right: 1px solid lightgray;
     padding: 20px;
+}
+.current-user-msg h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 
