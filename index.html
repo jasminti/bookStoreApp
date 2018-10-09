@@ -22,11 +22,14 @@
     <script src="scripts/ctrl/wishlist.ctrl.js"></script>
     <script src="scripts/ctrl/home.ctrl.js"></script>
     <script src="scripts/ctrl/userpage.ctrl.js"></script>
+    <script src="scripts/services/dataService.js"></script>
+    <script src="scripts/ctrl/books.ctrl.js"></script>
 </head>
 <body>
     <div class="main-page-content container">
         <!-- Navbar -->
         <ng-include src="'view/header.html'"></ng-include>
+        <a href="#/books">List of books</a>
         <div class="current-user-msg" ng-show="currentUser"><h4>Welcome back, {{currentUser.name}}</h4></div>
         <!-- Dropdown with other filters -->
         <div class="row dropdown-row">
@@ -58,8 +61,7 @@
                     <button class="btn btn-default">Sign Up</button>
                 </a>
             </div>
-            <ng-include src="'view/usernavbar.html'">
-            </ng-include>
+            <ng-include src="'view/usernavbar.html'"></ng-include>
         </div>
         <div ng-view=""></div>
 
@@ -70,150 +72,7 @@
             <button class="btn btn-primary">Last chance</button>
         </div>
 
-        <!-- Carousel section -->
-        <div uib-carousel interval="5000" active="active">
-            <div uib-slide index="0">
-                <div class="card col-sm-3">
-                    <img class="card-img-top" src="images/book02.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book title</h5>
-                        <span>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                        </span><br>
-                        <div class="btn-wrapper2">
-                            <a href="#" class="btn btn-success">Buy</a>
-                            <a href="#" class="btn btn-info">Add to wish list</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-sm-3">
-                    <img class="card-img-top" src="images/book07.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book title</h5>
-                        <span>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                        </span><br>
-                        <div class="btn-wrapper2">
-                            <a href="#" class="btn btn-success">Buy</a>
-                            <a href="#" class="btn btn-info">Add to wish list</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-sm-3">
-                    <img class="card-img-top" src="images/book04.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book title</h5>
-                        <span>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                        </span><br>
-                        <div class="btn-wrapper2">
-                            <a href="#" class="btn btn-success">Buy</a>
-                            <a href="#" class="btn btn-info">Add to wish list</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-sm-3">
-                    <img class="card-img-top" src="images/book08.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book title</h5>
-                        <span>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                        </span><br>
-                        <div class="btn-wrapper2">
-                            <a href="#" class="btn btn-success">Buy</a>
-                            <a href="#" class="btn btn-info">Add to wish list</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div uib-slide index="1">
-                <div class="card col-sm-3">
-                    <img class="card-img-top" src="images/book01.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book title</h5>
-                        <span>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                        </span><br>
-                        <div class="btn-wrapper2">
-                            <a href="#" class="btn btn-success">Buy</a>
-                            <a href="#" class="btn btn-info">Add to wish list</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-sm-3">
-                    <img class="card-img-top" src="images/book03.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book title</h5>
-                        <span>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                        </span><br>
-                        <div class="btn-wrapper2">
-                            <a href="#" class="btn btn-success">Buy</a>
-                            <a href="#" class="btn btn-info">Add to wish list</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-sm-3">
-                    <img class="card-img-top" src="images/book11.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book title</h5>
-                        <span>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                        </span><br>
-                        <div class="btn-wrapper2">
-                            <a href="#" class="btn btn-success">Buy</a>
-                            <a href="#" class="btn btn-info">Add to wish list</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-sm-3">
-                    <img class="card-img-top" src="images/book12.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Book title</h5>
-                        <span>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                        </span><br>
-                        <div class="btn-wrapper2">
-                            <a href="#" class="btn btn-success">Buy</a>
-                            <a href="#" class="btn btn-info">Add to wish list</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <ng-include src="'view/carousel.html'"></ng-include>
 
         <!-- Footer -->
         <footer></footer>

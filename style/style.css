@@ -147,6 +147,8 @@ footer{
     font-size: 1.8rem;
     font-weight: 700;
 }
-
+.nav-tabs li a {
+    padding: 15px 20px;
+}
 
 
