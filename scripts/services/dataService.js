@@ -1,5 +1,5 @@
 var app = angular.module('bookStoreApp');
-app.factory('dataServiceCtrl', function ($http) {
+app.factory('dataService', function ($http) {
     var baseURL = "http://lib.teatar.org/api/";
     $http.defaults.headers.common.Authorization = "Bearer 1234567890";
 
