@@ -24,12 +24,15 @@
     <script src="scripts/ctrl/userpage.ctrl.js"></script>
     <script src="scripts/services/dataService.js"></script>
     <script src="scripts/ctrl/books.ctrl.js"></script>
+    <script src="scripts/ctrl/authors.ctrl.js"></script>
+    <script src="scripts/ctrl/book.ctrl.js"></script>
 </head>
 <body>
     <div class="main-page-content container">
         <!-- Navbar -->
         <ng-include src="'view/header.html'"></ng-include>
         <a href="#/books">List of books</a>
+        <a href="#/authors">List of authors</a>
         <div class="current-user-msg" ng-show="currentUser"><h4>Welcome back, {{currentUser.name}}</h4></div>
         <!-- Dropdown with other filters -->
         <div class="row dropdown-row">

@@ -28,7 +28,12 @@ currentUser = {};
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: 'view/home.html'
+            templateUrl: 'view/home.html',
+            controller: 'homeCtrl'
+        })
+        .when('/authors', {
+            templateUrl: 'view/authors.html',
+            controller: 'authorsCtrl'
         })
         .when('/books', {
             templateUrl: 'view/books.html',

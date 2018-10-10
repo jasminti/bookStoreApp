@@ -13,6 +13,16 @@ app.factory('dataService', function ($http) {
                     console.log("Greska u pristupu");
                     callback(false)
                 })
+        },
+        read: function(dataSet, id, callback) {
+            var url = baseURL + dataSet + "/" + id;
+            $http.get(url)
+                .then(function (response) {
+                    callback(response.data)
+                }, function (reason) {
+                    console.log("Greska u pristupu");
+                    callback(false)
+                })
         }
     }
 })

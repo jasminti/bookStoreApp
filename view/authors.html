@@ -1,0 +1,26 @@
+<div>
+    <h2>Authors list</h2>
+    <div class="picked-book custom-col-md-6" ng-repeat="author in authors">
+        <div class="row">
+            <div class="picked-author-header col-md-4">
+                <img src="{{author.image}}" alt="">
+            </div>
+            <div class="picked-author-body col-md-8">
+                <h4>Name: {{author.name}}</h4>
+                <h4>Birthday: {{author.birthday}}</h4>
+                <!-- Show more/less magic -->
+                <input type="checkbox" class="read-more-state" id="{{author.id}}" />
+                <h4 class="read-more-wrap">Biography: Lorem ipsum dolor sit amet<span class="read-more-target">{{author.description}}</span></h4>
+                <label for="{{author.id}}" class="read-more-trigger"></label>
+                <h4>Email: {{author.email}}</h4>
+                <h4>Rating:<span>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </span></h4>
+            </div>
+        </div>
+    </div>
+</div>

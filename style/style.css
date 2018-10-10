@@ -100,14 +100,14 @@ footer{
     margin:0 10px 15px 0;
 }
 .picked-book-header img {
-    width: auto;
-    height: 200px;
-    text-align: center;
-    margin-top: 25px;
-    margin-left: 13px;
+    height: 220px;
+    margin-top: 30px;
 }
 .picked-book-body {
-    padding-top: 20px;
+    margin-top: 20px;
+}
+.picked-book-body span {
+    font-weight: 700;
 }
 .picked-book-body h4 {
     font-size: 1.6rem;
@@ -150,5 +150,55 @@ footer{
 .nav-tabs li a {
     padding: 15px 20px;
 }
-
-
+.read-more-state {
+    display: none;
+}
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+.read-more-state ~ .read-more-trigger:before {
+    content: 'Show more';
+}
+.read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Show less';
+}
+.read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #666;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+}
+.picked-author-header {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.picked-author-header img {
+    display: inline;
+    margin-left: -75%;
+    height: 100%;
+    width: auto;
+}
+.picked-author-body {
+    margin: 20px 0 20px 30px;
+}
+.picked-author-body h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
