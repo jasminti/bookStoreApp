@@ -12,7 +12,7 @@
                 <h4>Description: <a href="" ng-click="showBook(book.id)">See more</a></h4>
                 <h4>Pages: {{book.pages}}</h4>
                 <h4>Rating:
-                    <span uib-rating ng-model="rate" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                    <span class="uib-custom-rating" uib-rating ng-model="rate" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" aria-labelledby="default-rating"></span>
                 </h4>
                 <h4>Price: {{book.price}}</h4>
             </div>

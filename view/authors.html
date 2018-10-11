@@ -8,18 +8,11 @@
             <div class="picked-author-body col-md-8">
                 <h4>Name: {{author.name}}</h4>
                 <h4>Birthday: {{author.birthday}}</h4>
-                <!-- Show more/less magic -->
-                <input type="checkbox" class="read-more-state" id="{{author.id}}" />
-                <h4 class="read-more-wrap">Biography: Lorem ipsum dolor sit amet<span class="read-more-target">{{author.description}}</span></h4>
-                <label for="{{author.id}}" class="read-more-trigger"></label>
+                <h4>Biography: <a href="" ng-click="showAuthor(author.id)">See more</a></h4>
                 <h4>Email: {{author.email}}</h4>
-                <h4>Rating:<span>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-half"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                </span></h4>
+                <h4>Rating:
+                    <span class="uib-custom-rating" uib-rating ng-model="rate" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span><br>
+                </h4>
             </div>
         </div>
     </div>
