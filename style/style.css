@@ -45,7 +45,8 @@ a:hover {
     margin: 20px 0;
 }
 .book-cover-design img {
-    width: 19%;
+    width: 16%;
+    height: 100%;
 }
 .book-cover-design a:hover {
     transition: all .7s;
@@ -100,7 +101,7 @@ footer{
     margin:0 10px 15px 0;
 }
 .picked-book-header img {
-    height: 220px;
+    height: 200px;
     margin-top: 30px;
 }
 .picked-book-body {
@@ -201,4 +202,12 @@ footer{
 .picked-author-body h4 {
     font-size: 1.6rem;
     font-weight: bold;
+}
+.modal-header {
+    font-size: 2rem;
+    background: #d6d6d640;
+}
+.modal-body {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
 }

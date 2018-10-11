@@ -11,7 +11,7 @@ app.controller('booksCtrl', function ($scope, dataService, $uibModal) {
             templateUrl: 'view/book.html',
             controller: 'bookCtrl',
             size: 'xl',
-            resolve: { bookId: id}    
-        });
+            resolve: { bookId: id},
+        })
     }
 })

@@ -1,16 +1,10 @@
 <div uib-carousel interval="5000" active="active">
     <div uib-slide index="0">
         <div class="card col-sm-3">
-            <img class="card-img-top" src="images/book02.jpg" alt="Card image cap">
+            <img class="card-img-top" src="{{books[7].image}}" alt="Book cover image">
             <div class="card-body">
-                <h5 class="card-title">Book title</h5>
-                <span>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                </span><br>
+                <h5 class="card-title">{{books[7].title}}</h5>
+                <span uib-rating ng-model="rate" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span><br>
                 <div class="btn-wrapper2">
                     <a href="#" class="btn btn-success">Buy</a>
                     <a href="#" class="btn btn-info">Add to wish list</a>
@@ -18,16 +12,10 @@
             </div>
         </div>
         <div class="card col-sm-3">
-            <img class="card-img-top" src="images/book07.jpg" alt="Card image cap">
+            <img class="card-img-top" src="{{books[8].image}}" alt="Book cover image">
             <div class="card-body">
-                <h5 class="card-title">Book title</h5>
-                <span>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                </span><br>
+                <h5 class="card-title">{{books[8].title}}</h5>
+                <span uib-rating ng-model="rate" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span><br>
                 <div class="btn-wrapper2">
                     <a href="#" class="btn btn-success">Buy</a>
                     <a href="#" class="btn btn-info">Add to wish list</a>
@@ -35,16 +23,10 @@
             </div>
         </div>
         <div class="card col-sm-3">
-            <img class="card-img-top" src="images/book04.jpg" alt="Card image cap">
+            <img class="card-img-top" src="{{books[9].image}}" alt="Book cover image">
             <div class="card-body">
-                <h5 class="card-title">Book title</h5>
-                <span>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                </span><br>
+                <h5 class="card-title">{{books[9].title}}</h5>
+                <span uib-rating ng-model="rate" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span><br>
                 <div class="btn-wrapper2">
                     <a href="#" class="btn btn-success">Buy</a>
                     <a href="#" class="btn btn-info">Add to wish list</a>
