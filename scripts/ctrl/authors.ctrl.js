@@ -3,7 +3,7 @@ app.controller('authorsCtrl', function ($scope, dataService, $uibModal) {
 
     dataService.list("authors", function (data) {
         $scope.authors = data;
-    })
+    });
 
     $scope.showAuthor = function (id) {
         var modalInstance = $uibModal.open({
@@ -13,5 +13,6 @@ app.controller('authorsCtrl', function ($scope, dataService, $uibModal) {
             size: 'xl',
             resolve: { authorId: id},
         })
-    }
+    };
+
 })

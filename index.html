@@ -28,13 +28,12 @@
     <script src="scripts/ctrl/book.ctrl.js"></script>
     <script src="scripts/ctrl/carousel.ctrl.js"></script>
     <script src="scripts/ctrl/author.ctrl.js"></script>
+    <script src="scripts/ctrl/buybook.ctrl.js"></script>
 </head>
 <body>
     <div class="main-page-content container">
         <!-- Navbar -->
         <ng-include src="'view/header.html'"></ng-include>
-        <a href="#/books">List of books</a>
-        <a href="#/authors">List of authors</a>
         <div class="current-user-msg" ng-show="currentUser"><h4>Welcome back, {{currentUser.name}}</h4></div>
         <!-- Dropdown with other filters -->
         <div class="row dropdown-row">
@@ -54,8 +53,9 @@
                 </ul>
             </div>
             <div class="col-md-6">
+                <a href="#/authors"><button class="btn btn-default">Authors</button></a>
+                <a href="#/books"><button class="btn btn-default">Books</button></a>
                 <button class="btn btn-default">New Releases</button>
-                <button class="btn btn-default">Authors</button>
                 <button class="btn btn-default">Top 10</button>
             </div>
             <div class="col-md-4 text-right p0" ng-hide="currentUser">
@@ -77,7 +77,7 @@
             <button class="btn btn-primary">Last chance</button>
         </div>
 
-        <!--<ng-include src="'view/carousel.html'"></ng-include>-->
+        <ng-include src="'view/carousel.html'"></ng-include>
 
         <!-- Footer -->
         <footer></footer>

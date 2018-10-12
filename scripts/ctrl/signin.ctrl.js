@@ -1,6 +1,6 @@
 var app = angular.module('bookStoreApp')
 
-app.controller('signInCtrl' , function ($scope, $rootScope, $location, $uibModal) {
+app.controller('signInCtrl' , function ($scope, $rootScope, $location) {
     $scope.checkCustomerName = function (user) {
         console.log(user);
         for(var i = 0; i < users.length; i++) {

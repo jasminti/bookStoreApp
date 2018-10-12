@@ -2,16 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6b9cfde-db61-465f-ada7-47512ad84d0b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/ctrl/author.ctrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/author.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/ctrl/buybook.ctrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/buybook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ctrl/author.ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ctrl/author.ctrl.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/ctrl/authors.ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ctrl/authors.ctrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ctrl/book.ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ctrl/book.ctrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ctrl/books.ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ctrl/books.ctrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ctrl/shopingcart.ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ctrl/shopingcart.ctrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ctrl/signin.ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ctrl/signin.ctrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/services/dataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/services/dataService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/author.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/author.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/authors.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/authors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/book.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/books.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/carousel.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/carousel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/shopingcart.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/shopingcart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/signin.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,62 +33,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="books.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/books.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="books.ctrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/ctrl/books.ctrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authors.ctrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/ctrl/authors.ctrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="author.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/author.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="56" lean-forward="true" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authors.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/authors.html">
+      <file leaf-file-name="signin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/signin.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="54" lean-forward="true" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+              <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="book.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/book.html">
+      <file leaf-file-name="buybook.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/buybook.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
@@ -88,20 +51,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="book.ctrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/ctrl/book.ctrl.js">
+      <file leaf-file-name="books.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/books.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="204">
+              <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="author.ctrl.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/ctrl/author.ctrl.js">
+      <file leaf-file-name="shopingcart.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/shopingcart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            <state relative-caret-position="34">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="books.ctrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/ctrl/books.ctrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shopingcart.ctrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/ctrl/shopingcart.ctrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="229" column="19" lean-forward="true" selection-start-line="229" selection-start-column="19" selection-end-line="229" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/services/dataService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signin.ctrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/ctrl/signin.ctrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -109,8 +123,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+            <state relative-caret-position="544">
+              <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -138,7 +152,6 @@
       <list>
         <option value="$PROJECT_DIR$/view/signup.html" />
         <option value="$PROJECT_DIR$/view/shopingCart.html" />
-        <option value="$PROJECT_DIR$/scripts/ctrl/shopingcart.ctrl.js" />
         <option value="$PROJECT_DIR$/scripts/ctrl/wishlist.ctrl.js" />
         <option value="$PROJECT_DIR$/scripts/ctrl/signup.ctrl.js" />
         <option value="$PROJECT_DIR$/scripts/ctrl/userpage.ctrl.js" />
@@ -146,27 +159,31 @@
         <option value="$PROJECT_DIR$/view/userpage.html" />
         <option value="$PROJECT_DIR$/view/usernavbar.html" />
         <option value="$PROJECT_DIR$/view/wishlist.html" />
-        <option value="$PROJECT_DIR$/view/shopingcart.html" />
-        <option value="$PROJECT_DIR$/scripts/services/dataService.js" />
-        <option value="$PROJECT_DIR$/scripts/ctrl/book.ctrl.js" />
-        <option value="$PROJECT_DIR$/scripts/ctrl/signin.ctrl.js" />
-        <option value="$PROJECT_DIR$/view/signin.html" />
-        <option value="$PROJECT_DIR$/scripts/ctrl/books.ctrl.js" />
-        <option value="$PROJECT_DIR$/view/book.html" />
         <option value="$PROJECT_DIR$/scripts/ctrl/home.ctrl.js" />
         <option value="$PROJECT_DIR$/scripts/ctrl/carousel.js" />
         <option value="$PROJECT_DIR$/scripts/ctrl/carousel.ctrl..js" />
         <option value="$PROJECT_DIR$/scripts/app.js" />
         <option value="$PROJECT_DIR$/scripts/ctrl/carousel.ctrl.js" />
         <option value="$PROJECT_DIR$/view/home.html" />
-        <option value="$PROJECT_DIR$/view/books.html" />
         <option value="$PROJECT_DIR$/view/carousel.html" />
-        <option value="$PROJECT_DIR$/style/style.css" />
+        <option value="$PROJECT_DIR$/view/buybbok.html" />
+        <option value="$PROJECT_DIR$/view/book.html" />
+        <option value="$PROJECT_DIR$/scripts/ctrl/buybook.ctrl.js" />
+        <option value="$PROJECT_DIR$/scripts/ctrl/book.ctrl.js" />
         <option value="$PROJECT_DIR$/view/author.html" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/view/authors.html" />
         <option value="$PROJECT_DIR$/scripts/ctrl/authors.ctrl.js" />
         <option value="$PROJECT_DIR$/scripts/ctrl/author.ctrl.js" />
+        <option value="$PROJECT_DIR$/view/signin.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/view/authors.html" />
+        <option value="$PROJECT_DIR$/scripts/ctrl/signin.ctrl.js" />
+        <option value="$PROJECT_DIR$/scripts/services/dataService.js" />
+        <option value="$PROJECT_DIR$/view/buybook.html" />
+        <option value="$PROJECT_DIR$/style/style.css" />
+        <option value="$PROJECT_DIR$/scripts/ctrl/shopingcart.ctrl.js" />
+        <option value="$PROJECT_DIR$/view/shopingcart.html" />
+        <option value="$PROJECT_DIR$/scripts/ctrl/books.ctrl.js" />
+        <option value="$PROJECT_DIR$/view/books.html" />
       </list>
     </option>
   </component>
@@ -263,25 +280,25 @@
       <updated>1538471799944</updated>
       <workItem from="1538471802829" duration="54692000" />
       <workItem from="1539005098623" duration="33977000" />
-      <workItem from="1539239557640" duration="8206000" />
+      <workItem from="1539239557640" duration="26480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96875000" />
+    <option name="totallyTimeSpent" value="115149000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15625" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15625" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.2457293" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.20630749" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -300,13 +317,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -441,13 +451,6 @@
     <entry file="file://$PROJECT_DIR$/lib/angular.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/ctrl/shopingcart.ctrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -493,28 +496,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/shopingcart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/usernavbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/services/dataService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/signin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
@@ -535,106 +517,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/ctrl/signin.ctrl.js">
+    <entry file="file://$PROJECT_DIR$/scripts/ctrl/book.ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        <state relative-caret-position="68">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/app.js">
+    <entry file="file://$PROJECT_DIR$/view/author.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        <state relative-caret-position="102">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/style.css">
+    <entry file="file://$PROJECT_DIR$/scripts/ctrl/buybook.ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="201" column="1" lean-forward="true" selection-start-line="201" selection-start-column="1" selection-end-line="201" selection-end-column="1" />
+        <state relative-caret-position="119">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ctrl/authors.ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/carousel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="147" column="239" selection-start-line="147" selection-start-column="16" selection-end-line="147" selection-end-column="239" />
+        <state relative-caret-position="85">
+          <caret line="140" column="10" lean-forward="true" selection-start-line="140" selection-start-column="10" selection-end-line="140" selection-end-column="10" />
           <folding>
             <element signature="n#div#0;n#div#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#!!top" />
             <element signature="n#div#2;n#div#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/ctrl/carousel.ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="47" lean-forward="true" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ctrl/author.ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        <state relative-caret-position="51">
+          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/authors.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="54" lean-forward="true" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+        <state>
+          <caret column="25" selection-start-column="5" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/books.html">
+    <entry file="file://$PROJECT_DIR$/scripts/services/dataService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/ctrl/books.ctrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/ctrl/authors.ctrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        <state relative-caret-position="369">
+          <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/book.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="229" column="19" lean-forward="true" selection-start-line="229" selection-start-column="19" selection-end-line="229" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/buybook.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/author.html">
+    <entry file="file://$PROJECT_DIR$/scripts/ctrl/signin.ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="56" lean-forward="true" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+          <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/ctrl/book.ctrl.js">
+    <entry file="file://$PROJECT_DIR$/scripts/ctrl/shopingcart.ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/ctrl/author.ctrl.js">
+    <entry file="file://$PROJECT_DIR$/view/shopingcart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ctrl/books.ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/books.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
         </state>
       </provider>
     </entry>

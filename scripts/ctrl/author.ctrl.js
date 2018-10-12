@@ -3,4 +3,8 @@ app.controller('authorCtrl', function ($scope, $uibModalInstance, dataService, a
     dataService.read("authors", authorId, function (data) {
         $scope.author = data;
     })
+
+    $scope.cancel = function () {
+        $uibModalInstance.dismiss('cancel');
+    }
 })

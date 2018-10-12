@@ -1,5 +1,12 @@
-<div>
-    <h2>Book list</h2>
+<div class="list-content">
+    <h3>Book list</h3>
+    <h2>My Cart</h2>
+    <div ng-repeat="book in myCartItems">
+        <span>{{book.title}}</span>
+        <span>{{book.price}}</span>
+        <button class="btn btn-success">Checkout</button>
+        <button class="btn btn-danger">Remove</button>
+    </div>
     <div class="picked-book custom-col-md-6" ng-repeat="book in books">
         <div class="row">
             <div class="picked-book-header col-md-4">
@@ -18,9 +25,10 @@
             </div>
         </div>
         <div class="picked-book-footer text-center">
-            <button class="btn btn-primary">Buy</button>
+            <button class="btn btn-primary" ng-click="addToCart(book)">Buy</button>
             <button class="btn btn-default ml-10">Add to wish list</button>
             <button class="btn btn-default ml-10">Remove book</button>
         </div>
+
     </div>
 </div>

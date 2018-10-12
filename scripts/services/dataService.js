@@ -23,6 +23,26 @@ app.factory('dataService', function ($http) {
                     console.log("Greska u pristupu");
                     callback(false)
                 })
+        },
+        insert: function (dataSet, data, callback) {
+            var url = baseURL + dataSet;
+            $http.post(url, data)
+                .then(function (response) {
+                    callback(response.data)
+                }, function (reason) {
+                    console.log("nesto ne radi")
+                    callback(false)
+                })
+        },
+        update: function (dataSet, data, id, callback) {
+            var url = baseURL + dataSet + "/" + id;
+            $http.put(url, data)
+                .then(function (response) {
+                    callback(response.data)
+                }, function (reason) {
+                    console.log("nesto ne radi")
+                    callback(false)
+                })
         }
     }
 })
