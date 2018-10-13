@@ -28,6 +28,7 @@ app.controller('booksCtrl', function ($scope, $uibModal, dataService) {
     $scope.addItem = function (book) {
         $scope.books.push(book);
     }
+
     $scope.myCartItems = [];
     $scope.addToCart = function(book) {
         $scope.myCartItems.push(book);
