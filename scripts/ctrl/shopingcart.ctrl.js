@@ -4,5 +4,4 @@ app.controller('shopingCartCtrl', function ($scope, dataService) {
         $scope.books = data;
     })
 
-
 })

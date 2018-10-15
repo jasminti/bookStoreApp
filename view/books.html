@@ -1,12 +1,17 @@
 <div class="list-content">
-    <h3>Book list</h3>
-    <h2>My Cart</h2>
-    <div ng-repeat="book in myCartItems">
-        <span>{{book.title}}</span>
-        <span>{{book.price}}</span>
-        <button class="btn btn-success">Checkout</button>
-        <button class="btn btn-danger" ng-click="removeBook(book)">Remove</button>
+    <div class="cart-mini-content row">
+        <h2><ion-icon name="cart"></ion-icon> My Cart:</h2>
+        <div ng-repeat="book in myCartItems">
+            <div class="book-content col-md-4">{{book.title}}</div>
+            <div class="price-content col-md-5">{{book.price}} $</div>
+            <div class="btn-content col-md-3">
+                <button class="btn btn-success" ng-click="buyBook(book.id)">Checkout</button>
+                <button class="btn btn-danger" ng-click="removeFromCart(book.id)">Remove</button>
+            </div>
+        </div>
     </div>
+
+    <h3>Book list</h3>
     <div class="picked-book custom-col-md-6" ng-repeat="book in books">
         <div class="row">
             <div class="picked-book-header col-md-4">

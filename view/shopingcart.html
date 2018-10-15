@@ -1,22 +1,17 @@
 <div class="row">
     <h3>In your shoping cart there are following books:</h3>
-    <div class="picked-book custom-col-md-6">
+    <div class="picked-book custom-col-md-6" ng-repeat="book in myCartItems">
         <div class="row">
             <div class="picked-book-header col-md-4">
-                <img src="images/book01.jpg" alt="">
+                <img src="{{book.image}}" alt="">
             </div>
             <div class="picked-book-body col-md-8">
                 <h4>Book Title: {{book.title}}</h4>
                 <h4>Author:</h4>
                 <h4>Publisher: {{book.publisher}}</h4>
                 <h4>Pages: {{book.pages}}}</h4>
-                <h4>Rating:<span>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                    </span></h4>
+                <h4>Rating:
+                    <span class="uib-custom-rating" uib-rating ng-model="rate" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" aria-labelledby="default-rating"></span>></h4>
                 <h4>Price: {{book.price}}</h4>
             </div>
         </div>

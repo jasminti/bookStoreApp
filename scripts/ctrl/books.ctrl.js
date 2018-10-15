@@ -15,7 +15,7 @@ app.controller('booksCtrl', function ($scope, $uibModal, dataService) {
         })
     }
 
-    /*$scope.buyBook = function (id) {
+    $scope.buyBook = function (id) {
         var modalInstance = $uibModal.open({
             animation: true,
             templateUrl: 'view/buybook.html',
@@ -23,14 +23,20 @@ app.controller('booksCtrl', function ($scope, $uibModal, dataService) {
             size: 'xl',
             resolve: { bookId: id},
         })
-    }*/
+    }
 
     $scope.addItem = function (book) {
         $scope.books.push(book);
+    }
+
+    $scope.removeFromCart = function (book) {
+        $scope.myCartItems.pop(book, 1)
     }
 
     $scope.myCartItems = [];
     $scope.addToCart = function(book) {
         $scope.myCartItems.push(book);
     }
+
+
 })
