@@ -1,16 +1,4 @@
 <div class="list-content">
-    <div class="cart-mini-content row">
-        <h2><ion-icon name="cart"></ion-icon> My Cart:</h2>
-        <div ng-repeat="book in myCartItems">
-            <div class="book-content col-md-4">{{book.title}}</div>
-            <div class="price-content col-md-5">{{book.price}} $</div>
-            <div class="btn-content col-md-3">
-                <button class="btn btn-success" ng-click="buyBook(book.id)">Checkout</button>
-                <button class="btn btn-danger" ng-click="removeFromCart(book.id)">Remove</button>
-            </div>
-        </div>
-    </div>
-
     <h3>Book list</h3>
     <div class="picked-book custom-col-md-6" ng-repeat="book in books">
         <div class="row">
@@ -24,7 +12,7 @@
                 <h4>Description: <a href="" ng-click="showBook(book.id)">See more</a></h4>
                 <h4>Pages: {{book.pages}}</h4>
                 <h4>Rating:
-                    <span class="uib-custom-rating" uib-rating ng-model="rate" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" aria-labelledby="default-rating"></span>
+                    <span ng-click="showRate(book.rating, book.id)" class="uib-custom-rating" uib-rating ng-model="book.rating" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" aria-labelledby="default-rating"></span>
                 </h4>
                 <h4>Price: {{book.price}}</h4>
             </div>

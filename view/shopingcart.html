@@ -1,4 +1,4 @@
-<div class="row">
+<!--<div class="row">
     <h3>In your shoping cart there are following books:</h3>
     <div class="picked-book custom-col-md-6" ng-repeat="book in myCartItems">
         <div class="row">
@@ -101,5 +101,21 @@
             <button class="btn btn-default ml-10">Add to wish list</button>
             <button class="btn btn-default ml-10">Remove book</button>
         </div>
+    </div>
+</div>-->
+<div class="cart-mini-content row">
+    <h2><ion-icon name="cart"></ion-icon> My Cart:</h2>
+    <div ng-repeat="book in myCartItems">
+        <div class="book-content col-md-4">{{book.title}}</div>
+        <div class="price-content col-md-5">{{book.price}} $</div>
+        <div class="btn-content col-md-3">
+            <button class="btn btn-danger" ng-click="removeFromCart(book)">Remove</button>
+        </div>
+    </div>
+    <div class="pull-right">
+        <button class="btn btn-default" ng-click="buyBook(book.id)">Checkout</button>
+        <a href="#/books">
+            <button class="btn btn-default">Back to shop</button>
+        </a>
     </div>
 </div>

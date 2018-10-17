@@ -1,5 +1,5 @@
 var app = angular.module('bookStoreApp');
-app.controller('booksCtrl', function ($scope, $uibModal, dataService) {
+app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, dataService) {
 
     dataService.list("books", function (data) {
         $scope.books = data;
@@ -29,14 +29,12 @@ app.controller('booksCtrl', function ($scope, $uibModal, dataService) {
         $scope.books.push(book);
     }
 
-    $scope.removeFromCart = function (book) {
-        $scope.myCartItems.pop(book, 1)
+    $rootScope.myCartItems = [];
+    $scope.addToCart = function (book) {
+        $rootScope.myCartItems.push(book);
     }
 
-    $scope.myCartItems = [];
-    $scope.addToCart = function(book) {
-        $scope.myCartItems.push(book);
+    $scope.showRate = function (rate, id) {
+        alert(rate)
     }
-
-
 })

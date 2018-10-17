@@ -52,13 +52,19 @@
                     <li role="menuitem"><a href="#">Separated link</a></li>
                 </ul>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <a href="#/authors"><button class="btn btn-default">Authors</button></a>
                 <a href="#/books"><button class="btn btn-default">Books</button></a>
                 <button class="btn btn-default">New Releases</button>
                 <button class="btn btn-default">Top 10</button>
             </div>
-            <div class="col-md-4 text-right p0" ng-hide="currentUser">
+            <div class="col-md-5 text-right p0" ng-hide="currentUser">
+                <span ng-if="myCartItems.length">
+                    <a href="#/shopingcart">
+                        <ion-icon class="shoping-cart" name="cart"></ion-icon>
+                        <badge>{{myCartItems.length}}</badge>
+                    </a>
+                </span>
                 <a href="#/signin">
                     <button class="btn btn-default">Login</button>
                 </a>
