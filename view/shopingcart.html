@@ -1,119 +1,14 @@
-<!--<div class="row">
-    <h3>In your shoping cart there are following books:</h3>
-    <div class="picked-book custom-col-md-6" ng-repeat="book in myCartItems">
-        <div class="row">
-            <div class="picked-book-header col-md-4">
-                <img src="{{book.image}}" alt="">
-            </div>
-            <div class="picked-book-body col-md-8">
-                <h4>Book Title: {{book.title}}</h4>
-                <h4>Author:</h4>
-                <h4>Publisher: {{book.publisher}}</h4>
-                <h4>Pages: {{book.pages}}}</h4>
-                <h4>Rating:
-                    <span class="uib-custom-rating" uib-rating ng-model="rate" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" aria-labelledby="default-rating"></span>></h4>
-                <h4>Price: {{book.price}}</h4>
-            </div>
-        </div>
-        <div class="picked-book-footer text-center">
-            <button class="btn btn-primary">Buy</button>
-            <button class="btn btn-default ml-10">Add to wish list</button>
-            <button class="btn btn-default ml-10">Remove book</button>
-        </div>
-    </div>
-    <div class="picked-book custom-col-md-6">
-        <div class="row">
-            <div class="picked-book-header col-md-4">
-                <img src="images/book02.jpg" alt="">
-            </div>
-            <div class="picked-book-body col-md-8">
-                <h4>Book Title:</h4>
-                <h4>Author:</h4>
-                <h4>Year:</h4>
-                <h4>Publisher:</h4>
-                <h4>Pages:</h4>
-                <h4>Rating:<span>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                    </span></h4>
-                <h4>Price: 14,99 $</h4>
-            </div>
-        </div>
-        <div class="picked-book-footer text-center">
-            <button class="btn btn-primary">Buy</button>
-            <button class="btn btn-default ml-10">Add to wish list</button>
-            <button class="btn btn-default ml-10">Remove book</button>
-        </div>
-    </div>
-    <div class="picked-book custom-col-md-6">
-        <div class="row">
-            <div class="picked-book-header col-md-4">
-                <img src="images/book07.jpg" alt="">
-            </div>
-            <div class="picked-book-body col-md-8">
-                <h4>Book Title:</h4>
-                <h4>Author:</h4>
-                <h4>Year:</h4>
-                <h4>Publisher:</h4>
-                <h4>Pages:</h4>
-                <h4>Rating:<span>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                    </span></h4>
-                <h4>Price: 14,99 $</h4>
-            </div>
-        </div>
-        <div class="picked-book-footer text-center">
-            <button class="btn btn-primary">Buy</button>
-            <button class="btn btn-default ml-10">Add to wish list</button>
-            <button class="btn btn-default ml-10">Remove book</button>
-        </div>
-    </div>
-    <div class="picked-book custom-col-md-6">
-        <div class="row">
-            <div class="picked-book-header col-md-4">
-                <img src="images/book10.jpg" alt="">
-            </div>
-            <div class="picked-book-body col-md-8">
-                <h4>Book Title:</h4>
-                <h4>Author:</h4>
-                <h4>Year:</h4>
-                <h4>Publisher:</h4>
-                <h4>Pages:</h4>
-                <h4>Rating:<span>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                    </span></h4>
-                <h4>Price: 14,99 $</h4>
-            </div>
-        </div>
-        <div class="picked-book-footer text-center">
-            <button class="btn btn-primary">Buy</button>
-            <button class="btn btn-default ml-10">Add to wish list</button>
-            <button class="btn btn-default ml-10">Remove book</button>
-        </div>
-    </div>
-</div>-->
 <div class="cart-mini-content row">
     <h2><ion-icon name="cart"></ion-icon> My Cart:</h2>
     <div ng-repeat="book in myCartItems">
-        <div class="book-content col-md-4">{{book.title}}</div>
-        <div class="price-content col-md-5">{{book.price}} $</div>
-        <div class="btn-content col-md-3">
+        <div class="book-content col-md-6">{{book.title}}</div>
+        <div class="price-content col-md-4">{{book.price}} $</div>
+        <div class="btn-content col-md-2">
             <button class="btn btn-danger" ng-click="removeFromCart(book)">Remove</button>
         </div>
     </div>
     <div class="pull-right">
-        <button class="btn btn-default" ng-click="buyBook(book.id)">Checkout</button>
+        <button class="btn btn-success" ng-click="buyBook(book.id)">Checkout</button>
         <a href="#/books">
             <button class="btn btn-default">Back to shop</button>
         </a>
