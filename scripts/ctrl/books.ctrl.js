@@ -15,16 +15,6 @@ app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, dataService
         })
     }
 
-    $scope.buyBook = function (id) {
-        var modalInstance = $uibModal.open({
-            animation: true,
-            templateUrl: 'view/buybook.html',
-            controller: 'buyBookCtrl',
-            size: 'xl',
-            resolve: { bookId: id},
-        })
-    }
-
     $scope.addItem = function (book) {
         $scope.books.push(book);
     }
@@ -35,6 +25,6 @@ app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, dataService
     }
 
     $scope.showRate = function (rate, id) {
-        alert(rate)
+        alert("You have been rated this book with " + rate + " stars")
     }
 })

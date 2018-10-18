@@ -2,13 +2,13 @@
     <h2><ion-icon name="cart"></ion-icon> My Cart:</h2>
     <div ng-repeat="book in myCartItems">
         <div class="book-content col-md-6">{{book.title}}</div>
-        <div class="price-content col-md-4">{{book.price}} $</div>
-        <div class="btn-content col-md-2">
+        <div class="price-content col-md-5">{{book.price}} $</div>
+        <div class="btn-content col-md-1">
             <button class="btn btn-danger" ng-click="removeFromCart(book)">Remove</button>
         </div>
     </div>
     <div class="pull-right">
-        <button class="btn btn-success" ng-click="buyBook(book.id)">Checkout</button>
+        <button class="btn btn-success" ng-click="buyBook(book)">Checkout</button>
         <a href="#/books">
             <button class="btn btn-default">Back to shop</button>
         </a>
