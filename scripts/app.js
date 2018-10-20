@@ -64,8 +64,8 @@ app.config(['$routeProvider', function ($routeProvider) {
             controller: 'signUpCtrl'
         })
         .when('/signin', {
-            templateUrl: 'view/signin.html',
-            controller: 'signInCtrl'
+            template: '',
+            controller: 'loginCtrl'
         })
         .otherwise({ redirectTo: '/' });
 }])

@@ -1,5 +1,4 @@
 var app = angular.module('bookStoreApp')
-
 app.controller('signInCtrl' , function ($scope, $rootScope, $location, $uibModalInstance, $uibModal) {
 
     $scope.checkCustomerName = function (user) {
@@ -33,7 +32,7 @@ app.controller('signInCtrl' , function ($scope, $rootScope, $location, $uibModal
 
     $scope.cancel = function () {
         $uibModalInstance.dismiss('cancel');
-        $location.path('/shopingcart')
+        $location.path('/books')
     };
 
 })

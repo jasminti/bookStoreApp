@@ -25,6 +25,9 @@ app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, dataService
     }
 
     $scope.showRate = function (rate, id) {
-        alert("You have been rated this book with " + rate + " stars")
+        var url = 'books/' + id + '/' + rate;
+        dataService.insert(url, {}, function (data) {
+            rate = data.rating;
+        })
     }
 })

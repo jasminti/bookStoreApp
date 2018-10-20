@@ -11,7 +11,7 @@
                 <h4>Biography: <a href="" ng-click="showAuthor(author.id)">See more</a></h4>
                 <h4>Email: {{author.email}}</h4>
                 <h4>Rating:
-                    <span class="uib-custom-rating" uib-rating ng-model="rate" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span><br>
+                    <span ng-click="showRate(author.rating, author.id)" class="uib-custom-rating" uib-rating ng-model="author.rating" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span><br>
                 </h4>
             </div>
         </div>

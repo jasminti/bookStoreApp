@@ -15,4 +15,11 @@ app.controller('authorsCtrl', function ($scope, dataService, $uibModal) {
         })
     };
 
+    $scope.showRate = function (rate, id) {
+        var url = 'authors/' + id + '/' + rate;
+        dataService.insert(url, {}, function (data) {
+            rate = data.rating;
+        })
+    }
+
 })
