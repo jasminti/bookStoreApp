@@ -1,7 +1,7 @@
 var app = angular.module('bookStoreApp')
-app.controller('signInCtrl' , function ($scope, $rootScope, $location, $uibModalInstance, $uibModal) {
+app.controller('signInCtrl' , function ($scope, $rootScope, $location, $uibModalInstance, $uibModal, dataService) {
 
-    $scope.checkCustomerName = function (user) {
+    /*$scope.checkCustomerName = function (user) {
         console.log(user);
         for(var i = 0; i < users.length; i++) {
             console.log(users[i]);
@@ -18,6 +18,23 @@ app.controller('signInCtrl' , function ($scope, $rootScope, $location, $uibModal
             }
         }
         alert('neispravni podaci za korisnika!')
+    }*/
+
+
+    $scope.checkCustomerName = function (user) {
+        var URL = 'login/' + user.name + '/' + user.pass;
+        dataService.list(URL, function (data) {
+            if( data ) {
+                currentUser = data;
+                $rootScope.currentUser = data;
+                $uibModalInstance.dismiss('cancel');
+                $location.path('/books')
+            }
+            else {
+                alert("Username or password are wrong!Please try again");
+                $location.path('/books')
+            }
+        })
     }
 
     $scope.buyBook = function (id) {

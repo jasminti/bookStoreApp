@@ -31,6 +31,14 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'view/home.html',
             controller: 'homeCtrl'
         })
+        .when('/admin', {
+            templateUrl: 'view/admin.html',
+            controller: 'adminCtrl'
+        })
+        .when('/users', {
+            templateUrl: 'view/users.html',
+            controller: 'usersCtrl'
+        })
         .when('/carousel', {
             templateUrl: 'view/carousel.html',
             controller: 'carouselCtrl'

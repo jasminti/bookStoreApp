@@ -1,6 +1,7 @@
-<div class="users-navbar col-md-5" ng-show="currentUser">
+<div class="users-navbar" ng-show="currentUser">
     <a href="#/shopingcart"><ion-icon name="cart"></ion-icon></a>
     <a href="#/wishlist"><ion-icon name="list-box"></ion-icon></a>
     <a href="#/userpage"><ion-icon name="person"></ion-icon></a>
-    <a><ion-icon name="log-out"></ion-icon></a>
+    <a href="#/admin" ng-show="currentUser.role === 'admin'"><ion-icon name="people"></ion-icon></a>
+    <a href=""><ion-icon name="log-out"></ion-icon></a>
 </div>

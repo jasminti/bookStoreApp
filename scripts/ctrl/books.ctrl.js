@@ -10,7 +10,7 @@ app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, dataService
             animation: true,
             templateUrl: 'view/book.html',
             controller: 'bookCtrl',
-            size: 'xl',
+            size: 'md',
             resolve: { bookId: id},
         })
     }

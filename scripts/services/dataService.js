@@ -43,6 +43,16 @@ app.factory('dataService', function ($http) {
                     console.log("nesto ne radi")
                     callback(false)
                 })
+        },
+        delete: function (dataSet, data, id, callback) {
+            var url = baseURL + dataSet + "/" + id;
+            $http.delete(url, data)
+                .then(function (response) {
+                    callback(response.data)
+                }, function (reason) {
+                    console.log("nesto ne radi")
+                    callback(false)
+                })
         }
     }
 })
