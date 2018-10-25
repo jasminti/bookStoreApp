@@ -17,16 +17,17 @@ app.controller('usersCtrl', function ($scope, $http, $routeParams, $location, da
     }
 
     $scope.saveUser = function (user) {
+        $scope.id = $routeParams.id;
         if( user.id == 0){
             dataService.insert("users", user, function (data) {
                 console.log(data);
-                $location.path('/admin')
+                $location.path('/user')
             })
         }
         else{
             dataService.update("users", user, user.id, function (data) {
                 console.log(data);
-                $location.path('/admin')
+                $location.path('/user')
             })
         }
     }

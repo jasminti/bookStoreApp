@@ -36,7 +36,7 @@ app.config(['$routeProvider', function ($routeProvider) {
             controller: 'adminCtrl'
         })
         .when('/users', {
-            templateUrl: 'view/users.html',
+            templateUrl: 'view/user.html',
             controller: 'usersCtrl'
         })
         .when('/carousel', {

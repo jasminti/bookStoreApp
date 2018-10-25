@@ -44,11 +44,11 @@ app.factory('dataService', function ($http) {
                     callback(false)
                 })
         },
-        delete: function (dataSet, data, id, callback) {
+        delete: function (dataSet, id, callback) {
             var url = baseURL + dataSet + "/" + id;
-            $http.delete(url, data)
+            $http.delete(url)
                 .then(function (response) {
-                    callback(response.data)
+                    callback(true)
                 }, function (reason) {
                     console.log("nesto ne radi")
                     callback(false)

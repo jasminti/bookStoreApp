@@ -1,6 +1,7 @@
 var app = angular.module('bookStoreApp')
-app.controller('adminCtrl', function ($scope, $http, dataService){
+app.controller('adminCtrl', function ($scope, $http, $routeParams, dataService){
     refresh()
+
     $scope.delUser = function (user) {
         var ans = confirm("Jeste sigurni da zelite obrisati " + user.name + " ?")
         if( ans === true){
