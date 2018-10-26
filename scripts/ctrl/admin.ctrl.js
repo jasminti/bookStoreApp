@@ -1,5 +1,5 @@
 var app = angular.module('bookStoreApp')
-app.controller('adminCtrl', function ($scope, $http, $routeParams, dataService){
+app.controller('adminCtrl', function ($scope, $http, $location, $routeParams, $uibModal, dataService){
     refresh()
 
     $scope.delUser = function (user) {
@@ -11,6 +11,28 @@ app.controller('adminCtrl', function ($scope, $http, $routeParams, dataService){
             })
         }
     }
+
+    $scope.addNewUser = function (user) {
+        var modalInstance = $uibModal.open({
+            animation: true,
+            templateUrl: 'view/user.html',
+            controller: 'usersCtrl',
+            size: 'xl',
+        })
+    }
+
+    $scope.editUser = function (user) {
+        var modalInstance = $uibModal.open({
+            animation: true,
+            templateUrl: 'view/edituser.html',
+            controller: 'editUserCtrl',
+            size: 'xl',
+        })
+    }
+    //$scope.editUser = function (user) {
+        //console.log(user)
+        //$location.path('/user')
+    //}
 
     function refresh() {
         dataService.list("users", function(data){

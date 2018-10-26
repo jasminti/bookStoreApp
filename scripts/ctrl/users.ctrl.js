@@ -1,5 +1,5 @@
 var app = angular.module('bookStoreApp')
-app.controller('usersCtrl', function ($scope, $http, $routeParams, $location, dataService){
+app.controller('usersCtrl', function ($scope, $http, $routeParams, $location, $uibModalInstance, dataService){
     /*$scope.id = $routeParams.id;
     if( $scope.id == 0){
         $scope.user = {id: 0, active: true}
@@ -21,20 +21,16 @@ app.controller('usersCtrl', function ($scope, $http, $routeParams, $location, da
         if( user.id == 0){
             dataService.insert("users", user, function (data) {
                 console.log(data);
-                $location.path('/user')
+                $uibModalInstance.dismiss('cancel');
+                $location.path('/admin')
             })
         }
         else{
             dataService.update("users", user, user.id, function (data) {
                 console.log(data);
-                $location.path('/user')
+                $uibModalInstance.dismiss('cancel');
+                $location.path('/admin')
             })
         }
     }
-
-    $scope.editUser = function (user) {
-        console.log(user)
-        $location.path('/user')
-    }
-
 })
