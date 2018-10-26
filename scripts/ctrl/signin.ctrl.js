@@ -22,7 +22,7 @@ app.controller('signInCtrl' , function ($scope, $rootScope, $location, $uibModal
 
 
     $scope.checkCustomerName = function (user) {
-        var URL = 'login/' + user.name + '/' + user.pass;
+        var URL = 'login/' + user.name + '_' + user.pass;
         dataService.list(URL, function (data) {
             if( data ) {
                 currentUser = data;

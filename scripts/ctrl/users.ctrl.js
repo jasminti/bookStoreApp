@@ -32,4 +32,9 @@ app.controller('usersCtrl', function ($scope, $http, $routeParams, $location, da
         }
     }
 
+    $scope.editUser = function (user) {
+        console.log(user)
+        $location.path('/user')
+    }
+
 })

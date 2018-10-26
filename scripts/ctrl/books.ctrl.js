@@ -26,7 +26,7 @@ app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, dataService
 
     $scope.showRate = function (rate, id) {
         var url = 'books/' + id + '/' + rate;
-        dataService.insert(url, {}, function (data) {
+        dataService.read(url, {}, function (data) {
             rate = data.rating;
         })
     }
