@@ -261,24 +261,36 @@ footer{
     text-align: right;
     margin-bottom: 5px;
 }
-.shoping-cart {
+.shoping-cart-default {
     font-size: 2.7rem;
     color: #cccccc;
     vertical-align: middle;
-    margin-right: 10px;
 }
-.how-many-books-notification {
+.how-many-books-notification-default {
     background: red;
     color: white;
-    height: 16px;
-    width: 16px;
     border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 323px;
-    padding: 0px 5px;
+    position: relative;
+    top: -6px;
+    left: -6px;
+    padding: 1px 5px;
     font-size: 1.2rem;
-    font-weight: 600;
+}
+.shoping-cart-user {
+    color: #cccccc;
+    position: absolute;
+    top: 113px;
+    right: 355px;
+}
+.how-many-books-notification-user {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    position: relative;
+    top: -22px;
+    left: 5px;
+    padding: 1px 5px;
+    font-size: 1.2rem;
 }
 .add-user-wrapper {
     text-align: right;
