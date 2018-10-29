@@ -93,6 +93,7 @@ footer{
 .users-navbar a {
     font-size: 28px;
     color: #cccccc;
+    text-decoration: none;
 }
 .users-navbar a:hover {
     color: #9E9E9E;

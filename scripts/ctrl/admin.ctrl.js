@@ -12,21 +12,13 @@ app.controller('adminCtrl', function ($scope, $http, $location, $routeParams, $u
         }
     }
 
-    $scope.addNewUser = function (user) {
+    $scope.editUser = function (id) {
         var modalInstance = $uibModal.open({
             animation: true,
             templateUrl: 'view/user.html',
-            controller: 'usersCtrl',
+            controller: 'userCtrl',
             size: 'xl',
-        })
-    }
-
-    $scope.editUser = function (user) {
-        var modalInstance = $uibModal.open({
-            animation: true,
-            templateUrl: 'view/edituser.html',
-            controller: 'editUserCtrl',
-            size: 'xl',
+            resolve: { userId: id}
         })
     }
     //$scope.editUser = function (user) {

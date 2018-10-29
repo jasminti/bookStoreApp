@@ -1,15 +1,18 @@
 <div class="modal-content">
-    <div class="modal-header">Add new User</div>
+    <div class="modal-header">{{title}}</div>
     <div class="modal-body">
         <form class="edit-user-form">
             ID: <input type="number" ng-model="user.id"><br>
             Name: <input type="text" ng-model="user.name"><br>
-            Password: <input type="password" ng-model="user.pass"><br>
-            Address: <input type="text" ng-model="user.address"><br>
-            Road: <input type="number" ng-model="user.road"><br>
+            Road: <input type="text" ng-model="user.road"><br>
             City: <input type="text" ng-model="user.city"><br>
-            Zip: <input type="number" ng-model="user.zip"><br>
-            State: <input type="text" ng-model="user.state"><br>
+            Zip: <input type="text" ng-model="user.zip"><br>
+            State: <input type="text" ng-model="user.country"><br>
+            Username: <input type="text" ng-model="user.username"><br>
+            Password: <input type="password" ng-model="user.password"><br>
+            Email: <input type="text" ng-model="user.email"><br>
+            Credit Card: <input type="text" ng-model="user.card"><br>
+            Role: <input type="text" ng-model="user.role"><br>
         </form>
     </div>
     <div class="modal-footer">

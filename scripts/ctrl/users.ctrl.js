@@ -16,21 +16,5 @@ app.controller('usersCtrl', function ($scope, $http, $routeParams, $location, $u
         })
     }
 
-    $scope.saveUser = function (user) {
-        $scope.id = $routeParams.id;
-        if( user.id == 0){
-            dataService.insert("users", user, function (data) {
-                console.log(data);
-                $uibModalInstance.dismiss('cancel');
-                $location.path('/admin')
-            })
-        }
-        else{
-            dataService.update("users", user, user.id, function (data) {
-                console.log(data);
-                $uibModalInstance.dismiss('cancel');
-                $location.path('/admin')
-            })
-        }
-    }
+
 })
