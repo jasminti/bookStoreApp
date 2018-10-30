@@ -3,7 +3,7 @@
     <div class="picked-book custom-col-md-6" ng-repeat="book in books">
         <div class="row">
             <div class="picked-book-header col-md-4" ng-click="showBook(book.id)">
-                <a href="" ng-click="count = count + 1" ng-init="count=0"><img src="{{book.image}}" alt=""></a>
+                <a href="" ng-click="clicked(book.id)"><img src="{{book.image}}" alt=""></a>
             </div>
             <div class="picked-book-body col-md-8">
                 <h4>Book Title: <span>{{book.title}}</span></h4>
@@ -20,7 +20,7 @@
         <div class="picked-book-footer text-center">
             <button class="btn btn-success" ng-click="addToCart(book)">Buy</button>
             <button class="btn btn-default ml-10">Add to wish list</button>
-            <span>Total count: {{count}}</span>
+            <span>Total count: {{clicks[book.id]}}</span>
         </div>
     </div>
 </div>

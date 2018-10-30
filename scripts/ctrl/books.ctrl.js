@@ -1,6 +1,21 @@
 var app = angular.module('bookStoreApp');
 app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, $localStorage, dataService) {
 
+    clicks = $localStorage.clicks;
+    if(clicks === undefined){
+        clicks = [];
+        for(var i=0; i<30; i++){
+            clicks[i] = 0;
+        }
+    }
+    console.log(clicks);
+    $rootScope.clicks = clicks;
+
+    $scope.clicked = function(id) {
+        $rootScope.clicks[id]++;
+        $localStorage.clicks = $rootScope.clicks;
+    };
+
     dataService.list("books", function (data) {
         $scope.books = data;
     })
@@ -31,12 +46,4 @@ app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, $localStora
         })
     }
 
-    $scope.savePonder = function () {
-        $localStorage.count = $scope.count;
-        console.log(count);
-    }
-    /*$scope.count = 0;
-    $scope.nesto = function (id) {
-        $scope.count++;
-    }*/
 })
