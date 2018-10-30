@@ -1,5 +1,5 @@
 var app = angular.module('bookStoreApp');
-app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, dataService) {
+app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, $localStorage, dataService) {
 
     dataService.list("books", function (data) {
         $scope.books = data;
@@ -30,4 +30,13 @@ app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, dataService
             rate = data.rating;
         })
     }
+
+    $scope.savePonder = function () {
+        $localStorage.count = $scope.count;
+        console.log(count);
+    }
+    /*$scope.count = 0;
+    $scope.nesto = function (id) {
+        $scope.count++;
+    }*/
 })

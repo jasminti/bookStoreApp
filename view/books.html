@@ -2,14 +2,14 @@
     <h3>Book list</h3>
     <div class="picked-book custom-col-md-6" ng-repeat="book in books">
         <div class="row">
-            <div class="picked-book-header col-md-4">
-                <img src="{{book.image}}" alt="">
+            <div class="picked-book-header col-md-4" ng-click="showBook(book.id)">
+                <a href="" ng-click="count = count + 1" ng-init="count=0"><img src="{{book.image}}" alt=""></a>
             </div>
             <div class="picked-book-body col-md-8">
                 <h4>Book Title: <span>{{book.title}}</span></h4>
                 <h4>Author: {{book.authors}}</h4>
                 <h4>Publisher: {{book.publisher['name']}}</h4>
-                <h4>Description: <a href="" ng-click="showBook(book.id)">See more</a></h4>
+                <!--<h4>Book Description: <button class="btn btn-info" >Read</button></h4>-->
                 <h4>Pages: {{book.pages}}</h4>
                 <h4>Rating:
                     <span ng-click="showRate(book.rating, book.id)" class="uib-custom-rating" uib-rating ng-model="book.rating" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" aria-labelledby="default-rating"></span>
@@ -20,6 +20,7 @@
         <div class="picked-book-footer text-center">
             <button class="btn btn-success" ng-click="addToCart(book)">Buy</button>
             <button class="btn btn-default ml-10">Add to wish list</button>
+            <span>Total count: {{count}}</span>
         </div>
     </div>
 </div>
