@@ -1,4 +1,4 @@
-var app = angular.module('bookStoreApp', ['ngRoute', 'ui.bootstrap', 'ngStorage']);
+var app = angular.module('bookStoreApp', ['ngRoute', 'ui.bootstrap', 'ngStorage', 'ngSanitize']);
 
 users = [
     {

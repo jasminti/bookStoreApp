@@ -1,6 +1,6 @@
 <div class="modal-content">
     <div class="modal-header">{{book.title}}</div>
-    <div class="modal-body">{{book.description}}</div>
+    <div class="modal-body" ng-bind-html="book.description">{{book.description}}</div>
     <div class="modal-footer">
         <button class="btn btn-default" ng-click="cancel()">Close</button>
     </div>

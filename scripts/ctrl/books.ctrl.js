@@ -1,25 +1,37 @@
 var app = angular.module('bookStoreApp');
 app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, $localStorage, dataService) {
+    refresh();
 
-    clicks = $localStorage.clicks;
-    if(clicks === undefined){
-        clicks = [];
-        for(var i=0; i<30; i++){
-            clicks[i] = 0;
+    // clicks = $localStorage.clicks;
+    // if(clicks === undefined){
+    //     clicks = [];
+    //     for(var i=0; i<30; i++){
+    //         clicks[i] = 0;
+    //     }
+    // }
+    // console.log(clicks);
+    // $rootScope.clicks = clicks;
+    //
+    // $scope.clicked = function(id) {
+    //     $rootScope.clicks[id]++;
+    //     $localStorage.clicks = $rootScope.clicks;
+    // };
+    $scope.clicked = function (bookId) {
+        if ( currentUser.id != undefined) {
+            var dataSet = "books/" + bookId + "/" + currentUser.id;
+            dataService.list(dataSet, function (data) {
+                refresh();
+            })
         }
     }
-    console.log(clicks);
-    $rootScope.clicks = clicks;
 
-    $scope.clicked = function(id) {
-        $rootScope.clicks[id]++;
-        $localStorage.clicks = $rootScope.clicks;
-    };
+    function refresh () {
+        dataService.list("books", function (data) {
+            $scope.books = data;
+            console.log($scope.books[0]);
+        })
+    }
 
-    dataService.list("books", function (data) {
-        $scope.books = data;
-    })
-    
     $scope.showBook = function (id) {
         var modalInstance = $uibModal.open({
             animation: true,
