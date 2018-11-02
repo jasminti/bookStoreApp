@@ -83,6 +83,11 @@
             <ng-include src="'view/usernavbar.html'"></ng-include>
         </div>
         <div ng-view=""></div>
+        <div class="loader" ng-show="wait">
+            <div class="circle">
+
+            </div>
+        </div>
 
         <!-- Second Book filter section -->
         <!--<div class="second-book-content">

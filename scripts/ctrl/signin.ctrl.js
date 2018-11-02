@@ -28,6 +28,9 @@ app.controller('signInCtrl' , function ($scope, $rootScope, $location, $uibModal
                 currentUser = data;
                 $rootScope.currentUser = data;
                 $uibModalInstance.dismiss('cancel');
+                dataService.list('basket', function (data) {
+                    $rootScope.myCartItems = data;
+                });
                 $location.path('/books')
             }
             else {

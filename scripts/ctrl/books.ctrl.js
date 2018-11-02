@@ -28,7 +28,6 @@ app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, $localStora
     function refresh () {
         dataService.list("books", function (data) {
             $scope.books = data;
-            console.log($scope.books[0]);
         })
     }
 
@@ -48,6 +47,9 @@ app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, $localStora
 
     $rootScope.myCartItems = [];
     $scope.addToCart = function (book) {
+        dataService.insert('basket/' + book.id, {}, function (data) {
+            $rootScope.myCartItems = data;
+        })
         $rootScope.myCartItems.push(book);
     }
 
