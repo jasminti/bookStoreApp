@@ -16,13 +16,16 @@ app.controller('shopingCartCtrl', function ($scope, $rootScope, $location, $uibM
     }
 
     $scope.buyBook = function (id) {
-        var modalInstance = $uibModal.open({
-            animation: true,
-            templateUrl: 'view/signin.html',
-            controller: 'signInCtrl',
-            size: 'xl',
-            resolve: { bookId: id},
+        dataService.list('checkout', function (data) {
+            alert("Formirana je narudzba " + data.id + " datuma " + data.date);
         })
+        // var modalInstance = $uibModal.open({
+        //     animation: true,
+        //     templateUrl: 'view/signin.html',
+        //     controller: 'signInCtrl',
+        //     size: 'xl',
+        //     resolve: { bookId: id},
+        // })
     }
 
 })
