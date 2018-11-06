@@ -2,10 +2,15 @@
     <span ng-if="myCartItems.length">
         <a href="#/shopingcart">
             <ion-icon class="shoping-cart-user" name="cart"></ion-icon>
-            <span class="how-many-books-notification-user">{{myCartItems.length}}</span>
+            <span class="cart-notify">{{myCartItems.length}}</span>
         </a>
     </span>
-    <!--<a href="#/shopingcart"><ion-icon name="cart"></ion-icon></a>-->
+    <!--<span>-->
+        <!--<a href="#/wishlist">-->
+            <!--<ion-icon class="shoping-cart-user" name="list-box"></ion-icon>-->
+            <!--<span class="list-notify">{{myListItems.length}}</span>-->
+        <!--</a>-->
+    <!--</span>-->
     <a href="#/wishlist"><ion-icon name="list-box"></ion-icon></a>
     <a href="#/userpage"><ion-icon name="person"></ion-icon></a>
     <a href="#/admin" ng-show="currentUser.role === 'admin'"><ion-icon name="people"></ion-icon></a>

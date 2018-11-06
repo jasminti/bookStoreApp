@@ -31,6 +31,10 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'view/home.html',
             controller: 'homeCtrl'
         })
+        .when('/usersorder', {
+            templateUrl: 'view/usersorder.html',
+            controller: 'usersOrderCtrl'
+        })
         .when('/edituser', {
             templateUrl: 'view/edituser.html',
             controller: 'editUserCtrl'

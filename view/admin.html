@@ -10,6 +10,7 @@
         <li ng-repeat="user in users" class="user-list">
             {{user.name}}
             <span class="icon-wrapper">
+                <a href="#/users/{{user.id}}"><ion-icon name="cart" ng-click="usersOrder(user.id)"></ion-icon></a>
                 <a href="#/users/{{user.id}}"><ion-icon name="create" ng-click="editUser(user.id)"></ion-icon></a>
                 <a href=""><ion-icon name="trash" ng-click="delUser(user)"></ion-icon></a>
             </span>

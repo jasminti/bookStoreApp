@@ -21,10 +21,16 @@ app.controller('adminCtrl', function ($scope, $http, $location, $routeParams, $u
             resolve: { userId: id}
         })
     }
-    //$scope.editUser = function (user) {
-        //console.log(user)
-        //$location.path('/user')
-    //}
+
+    $scope.usersOrder = function (id) {
+        var modalInstance = $uibModal.open({
+            animation: true,
+            templateUrl: 'view/usersorder.html',
+            controller: 'usersOrderCtrl',
+            size: 'md',
+            resolve: { userId: id}
+        })
+    }
 
     function refresh() {
         dataService.list("users", function(data){
