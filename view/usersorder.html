@@ -1,10 +1,10 @@
 <div class="modal-content">
-    <div class="modal-header">Order by {{title}}</div>
-    <div class="modal-body">
-
+    <div class="modal-header">Order no. {{order.id}}<br>{{order.date}}<br>{{order.user.name}}</div>
+    <div class="modal-body row" ng-repeat="book in order.items">
+        <div class="book-content col-md-8">{{book.title}}</div>
+        <div class="price-content col-md-4">{{book.price}} $</div>
     </div>
     <div class="modal-footer">
-        <button class="btn btn-primary" ng-hide="currentUser.role !== 'admin'" ng-click="saveUser(user)">Save</button>
         <button class="btn btn-default" ng-click="cancel()">Close</button>
     </div>
 </div>
