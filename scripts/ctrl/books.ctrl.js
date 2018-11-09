@@ -41,7 +41,7 @@ app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, $localStora
 
     $rootScope.myListItems = [];
     $scope.addToList = function (book) {
-        dataService.insert('wishlist/' + book.id, function (data) {
+        dataService.insert('wishlist/' + book.id, {}, function (data) {
             $rootScope.myListItems = data;
         })
         $rootScope.myListItems.push(book);
