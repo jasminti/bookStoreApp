@@ -1,5 +1,5 @@
 var app = angular.module('bookStoreApp')
-app.controller('usersCtrl', function ($scope, $http, $routeParams, $location, $uibModalInstance, dataService){
+app.controller('usersCtrl', function ($scope, $http, $routeParams, $location, dataService){
     /*$scope.id = $routeParams.id;
     if( $scope.id == 0){
         $scope.user = {id: 0, active: true}
@@ -15,6 +15,5 @@ app.controller('usersCtrl', function ($scope, $http, $routeParams, $location, $u
             $scope.users = data
         })
     }
-
 
 })

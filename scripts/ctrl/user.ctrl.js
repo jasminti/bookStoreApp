@@ -1,5 +1,5 @@
 var app = angular.module('bookStoreApp');
-app.controller('userCtrl', function ($scope, $uibModal, $rootScope, dataService, userId, $uibModalInstance, $location) {
+app.controller('userCtrl', function ($scope, $uibModal, $rootScope, dataService, $uibModalInstance, $location, userId) {
 
     if( userId != 0) {
         dataService.read("users", userId, function (data) {
@@ -27,4 +27,10 @@ app.controller('userCtrl', function ($scope, $uibModal, $rootScope, dataService,
             })
         }
     }
+
+    $scope.cancel = function () {
+        $uibModalInstance.dismiss('cancel');
+        $location.path('/admin')
+    };
+
 })

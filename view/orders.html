@@ -1,9 +1,10 @@
 <h3>All orders: </h3>
 <div ng-repeat="order in orders">
-    <ul class="user-wrapper">
+    <ul class="order-wrapper">
         <li class="user-list">
             Order ID: {{order.id}}<br>
-            Order date: {{order.date}}<br>
-            Order by: {{order.user.name}}<br> <a href="" ng-click="showOrder(order.id)"><ion-icon name="eye"></ion-icon></a></li>
+            Order date: {{order.date | date:'medium'}}<br>
+            Order by: {{order.user.name}}<br> <a href="" ng-click="showOrder(order.id)"><ion-icon name="eye"></ion-icon></a>
+        </li>
     </ul>
 </div>

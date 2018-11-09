@@ -37,4 +37,10 @@ app.controller('adminCtrl', function ($scope, $http, $location, $routeParams, $u
             $scope.users = data
         })
     }
+
+    $scope.cancel = function () {
+        $uibModalInstance.dismiss('cancel');
+        $location.path('/books')
+    };
+
 })

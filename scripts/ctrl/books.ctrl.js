@@ -2,20 +2,6 @@ var app = angular.module('bookStoreApp');
 app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, $localStorage, dataService) {
     refresh();
 
-    // clicks = $localStorage.clicks;
-    // if(clicks === undefined){
-    //     clicks = [];
-    //     for(var i=0; i<30; i++){
-    //         clicks[i] = 0;
-    //     }
-    // }
-    // console.log(clicks);
-    // $rootScope.clicks = clicks;
-    //
-    // $scope.clicked = function(id) {
-    //     $rootScope.clicks[id]++;
-    //     $localStorage.clicks = $rootScope.clicks;
-    // };
     $scope.clicked = function (bookId) {
         if ( currentUser.id != undefined) {
             var dataSet = "books/" + bookId + "/" + currentUser.id;
@@ -51,6 +37,14 @@ app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, $localStora
             $rootScope.myCartItems = data;
         })
         $rootScope.myCartItems.push(book);
+    }
+
+    $rootScope.myListItems = [];
+    $scope.addToList = function (book) {
+        dataService.insert('wishlist/' + book.id, function (data) {
+            $rootScope.myListItems = data;
+        })
+        $rootScope.myListItems.push(book);
     }
 
     $scope.showRate = function (rate, id) {

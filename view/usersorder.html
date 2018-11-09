@@ -1,5 +1,5 @@
 <div class="modal-content">
-    <div class="modal-header">Order no. {{order.id}}<br>{{order.date}}<br>{{order.user.name}}</div>
+    <div class="modal-header">Order no. {{order.id}} by {{order.user.name}}</div>
     <div class="modal-body row" ng-repeat="book in order.items">
         <div class="book-content col-md-8">{{book.title}}</div>
         <div class="price-content col-md-4">{{book.price}} $</div>

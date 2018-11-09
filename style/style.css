@@ -68,15 +68,16 @@ a:hover {
     margin: 20px 0;
 }
 .carousel {
-    margin: 20px 0;
+    margin: 30px 0;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.08);
 }
 .card {
-    border: 1px solid darkgray;
+    border: 1px solid #a9a9a930;
     border-radius: 5px;
-    height: 465px;
+    height: 410px;
 }
 .card-img-top {
-    height: 300px;
+    height: 250px;
 }
 .card-title {
     font-weight: 700;
@@ -279,9 +280,15 @@ footer{
 }
 .shoping-cart-user {
     color: #cccccc;
-    position: absolute;
-    top: 114px;
-    right: 380px;
+    position: relative;
+    top: 0;
+    right: -35px;
+}
+.wishlist-user {
+    color: #cccccc;
+    position: relative;
+    top: 0;
+    right: -13px;
 }
 .cart-notify {
     background: red;
@@ -289,7 +296,7 @@ footer{
     border-radius: 50%;
     position: relative;
     top: -22px;
-    left: 5px;
+    left: 19px;
     padding: 1px 5px;
     font-size: 1.2rem;
 }
@@ -299,7 +306,7 @@ footer{
     border-radius: 50%;
     position: relative;
     top: -22px;
-    left: 5px;
+    left: 0px;
     padding: 1px 5px;
     font-size: 1.2rem;
 }
@@ -363,4 +370,15 @@ footer{
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+.order-wrapper {
+    list-style: none;
+    padding-left: 0;
+}
+.order-wrapper li {
+    background-color: #ffffff;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.08);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.6rem;
 }
