@@ -8,10 +8,21 @@ app.controller('wishListCtrl', function ($scope, $rootScope, $localStorage, $loc
         })
     }
 
+    //$rootScope.myCartItems = [];
+    $scope.addToCart = function (book) {
+        dataService.insert('basket/' + book.id, {}, function (data) {
+            $rootScope.myCartItems = data;
+        })
+        $rootScope.myCartItems.push(book);
+        dataService.delete('wishlist', book.id, function (data) {
+            refresh();
+        })
+    }
+
     $scope.removeFromList = function (book) {
         dataService.delete('wishlist', book.id, function (data) {
                 refresh();
-            })
+        })
     }
 
 })
