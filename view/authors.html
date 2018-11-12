@@ -1,19 +1,9 @@
 <div class="list-content">
     <h3>Authors list</h3>
-    <div class="picked-book custom-col-md-6" ng-repeat="author in authors">
-        <div class="row">
-            <div class="picked-author-header col-md-4">
-                <img src="{{author.image}}" alt="">
-            </div>
-            <div class="picked-author-body col-md-8">
-                <h4>Name: {{author.name}}</h4>
-                <h4>Birthday: {{author.birthday}}</h4>
-                <h4>Biography: <a href="" ng-click="showAuthor(author.id)">See more</a></h4>
-                <h4>Email: {{author.email}}</h4>
-                <h4>Rating:
-                    <span ng-click="showRate(author.rating, author.id)" class="uib-custom-rating" uib-rating ng-model="author.rating" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span><br>
-                </h4>
-            </div>
-        </div>
+
+    <div class="custom-col-md-6" ng-repeat="author in authors">
+        <author data="author"></author>
+
+
     </div>
 </div>

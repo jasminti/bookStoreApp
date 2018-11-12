@@ -1,7 +1,16 @@
-<div class="modal-content">
-    <div class="modal-header">{{author.name}}</div>
-    <div class="modal-body">{{author.description}}</div>
-    <div class="modal-footer">
-        <button class="btn btn-default" ng-click="cancel()">Close</button>
+<div class="picked-book">
+    <div class="row">
+        <div class="picked-book-header col-md-4">
+            <img src="{{data.image}}" alt="">
+        </div>
+        <div class="picked-book-body col-md-8">
+            <h4>Name: {{data.name}}</h4>
+            <h4>Birthday: {{data.birthday}}</h4>
+            <h4>Biography: <a href="" ng-click="showAuthor(data.id)">See more</a></h4>
+            <h4>Email: {{data.email}}</h4>
+            <h4>Rating:
+                <span ng-click="showRate(data.rating, data.id)" class="uib-custom-rating" uib-rating ng-model="data.rating" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span><br>
+            </h4>
+        </div>
     </div>
 </div>

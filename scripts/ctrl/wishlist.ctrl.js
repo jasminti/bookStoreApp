@@ -8,7 +8,6 @@ app.controller('wishListCtrl', function ($scope, $rootScope, $localStorage, $loc
         })
     }
 
-    //$rootScope.myCartItems = [];
     $scope.addToCart = function (book) {
         dataService.insert('basket/' + book.id, {}, function (data) {
             $rootScope.myCartItems = data;
