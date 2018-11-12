@@ -113,15 +113,36 @@ footer{
 .picked-book-body {
     margin-top: 20px;
 }
-.picked-book-body span {
+.authors-body {
+    margin: 15px 0 15px 40px;
+}
+.picked-book-body span,
+.authors-body span{
     font-weight: 700;
 }
-.picked-book-body h4 {
+.picked-book-body h4,
+.authors-body h4{
     font-size: 1.6rem;
     font-weight: bold;
 }
 .picked-book-footer {
     padding: 15px 0;
+}
+.authors-header {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.authors-header img {
+    display: inline;
+    margin: 0 auto;
+    margin-left: -70%;
+    height: 100%;
+    width: auto;
 }
 .custom-col-md-6 {
     width: 48%;
