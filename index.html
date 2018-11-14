@@ -41,6 +41,8 @@
     <script src="scripts/ctrl/usersorder.ctrl.js"></script>
     <script src="scripts/ctrl/orders.ctrl.js"></script>
     <script src="scripts/directives/author.js"></script>
+    <script src="scripts/directives/buy.js"></script>
+    <script src="scripts/directives/wishlist.js"></script>
 </head>
 <body>
     <div class="main-page-content container">
@@ -90,8 +92,8 @@
         <div class="loader" ng-show="wait">
             <div class="circle"></div>
         </div>
-
-        <div ng-controller="carouselCtrl">
+        <hr>
+        <div ng-controller="carouselCtrl" style="margin-top: 24px;">
             <ng-include src="'view/carousel.html'"></ng-include>
         </div>
 

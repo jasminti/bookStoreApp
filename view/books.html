@@ -18,8 +18,8 @@
             </div>
         </div>
         <div class="picked-book-footer text-center">
-            <button class="btn btn-success" ng-click="addToCart(book)">Buy</button>
-            <button class="btn btn-default ml-10" ng-click="addToList(book)">Add to wish list</button>
+            <buy data="book.id"></buy>
+            <wish-list data="book.id"></wish-list>
             <span>Total count: {{book.clicked}}</span>
         </div>
     </div>
