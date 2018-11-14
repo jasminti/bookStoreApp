@@ -48,10 +48,11 @@ app.controller('booksCtrl', function ($scope, $uibModal, $rootScope, $localStora
     }
 
     $scope.showRate = function (rate, id) {
-        var url = 'books/' + id + '/' + rate;
-        dataService.read(url, {}, function (data) {
+        var url = 'rating/' + id + '/' + rate;
+        console.log(url);
+        dataService.list(url, function (data) {
             rate = data.rating;
         })
     }
 
-})
+});
