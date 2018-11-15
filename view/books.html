@@ -9,7 +9,6 @@
                 <h4>Book Title: <span>{{book.title}}</span></h4>
                 <h4>Author: {{book.authors}}</h4>
                 <h4>Publisher: {{book.publisher['name']}}</h4>
-                <!--<h4>Book Description: <button class="btn btn-info" >Read</button></h4>-->
                 <h4>Pages: {{book.pages}}</h4>
                 <h4>Rating:
                     <span ng-click="showRate(book.rating, book.id)" class="uib-custom-rating" uib-rating ng-model="book.rating" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" aria-labelledby="default-rating"></span>

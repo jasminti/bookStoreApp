@@ -5,7 +5,7 @@
         </div>
         <div class="authors-body col-md-8">
             <h4>Name: {{data.name}}</h4>
-            <h4>Birthday: {{data.birthday}}</h4>
+            <h4>Birthday: {{data.birthday | date:'medium'}}</h4>
             <h4>Biography: <a href="" ng-click="showAuthor(data.id)">See more</a></h4>
             <h4>Email: {{data.email}}</h4>
             <h4>Rating:
