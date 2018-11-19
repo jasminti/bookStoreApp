@@ -8,8 +8,8 @@ app.controller('authorsCtrl', function ($scope, dataService, $uibModal) {
     $scope.showAuthor = function (id) {
         var modalInstance = $uibModal.open({
             animation: true,
-            templateUrl: 'view/author.html',
-            controller: 'authorCtrl',
+            templateUrl: 'view/authorsbio.html',
+            controller: 'authorsBioCtrl',
             size: 'xl',
             resolve: { authorId: id},
         })

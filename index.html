@@ -40,9 +40,10 @@
     <script src="scripts/ctrl/user.ctrl.js"></script>
     <script src="scripts/ctrl/usersorder.ctrl.js"></script>
     <script src="scripts/ctrl/orders.ctrl.js"></script>
+    <script src="scripts/ctrl/authorsbio.ctrl.js"></script>
     <script src="scripts/directives/author.js"></script>
     <script src="scripts/directives/buy.js"></script>
-    <script src="scripts/directives/wishList.js"></script>
+    <script src="scripts/directives/wishlist.js"></script>
 </head>
 <body>
     <div class="main-page-content container">
@@ -88,12 +89,14 @@
             </div>
             <ng-include src="'view/usernavbar.html'"></ng-include>
         </div>
+        <!-- ng-view -->
         <div ng-view=""></div>
+        <!-- Loader -->
         <div class="loader" ng-show="wait">
             <div class="circle"></div>
         </div>
-
-        <div ng-controller="carouselCtrl">
+        <!-- Carousel -->
+        <div ng-controller="carouselCtrl" style="margin-top: 24px;">
             <ng-include src="'view/carousel.html'"></ng-include>
         </div>
 

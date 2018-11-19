@@ -9,7 +9,6 @@
                 <h4>Book Title: <span>{{book.title}}</span></h4>
                 <h4>Author: {{book.authors}}</h4>
                 <h4>Publisher: {{book.publisher['name']}}</h4>
-                <!--<h4>Book Description: <button class="btn btn-info" >Read</button></h4>-->
                 <h4>Pages: {{book.pages}}</h4>
                 <h4>Rating:
                     <span ng-click="showRate(book.rating, book.id)"
@@ -23,10 +22,8 @@
             </div>
         </div>
         <div class="picked-book-footer text-center">
-            <buy book="book.id"></buy>
-            <wish-list book="book.id"></wish-list>
-            <!--<button class="btn btn-success" ng-click="addToCart(book)">Buy</button>-->
-            <!--<button class="btn btn-default ml-10" ng-click="addToList(book)">Add to wish list</button>-->
+            <buy data="book.id"></buy>
+            <wish-list data="book.id"></wish-list>
             <span>Total count: {{book.clicked}}</span>
         </div>
     </div>

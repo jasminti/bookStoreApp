@@ -1,13 +1,13 @@
 <div uib-carousel interval="5000" active="active">
-    <div uib-slide index=$index ng-repeat="part in data" >
+    <div uib-slide index=$index ng-repeat="part in data">
         <div class="card col-sm-3" ng-repeat="book in part">
             <img class="card-img-top" ng-src="{{book.image}}" alt="Book cover image">
             <div class="card-body">
                 <h5 class="card-title">{{book.title}}</h5>
                 <span class="uib-custom-rating" uib-rating ng-model="book.rating" max="5" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span><br>
                 <div class="btn-wrapper2">
-                    <buy book="book.id"></buy>
-                    <a href="#" class="btn btn-info">Add to wish list</a>
+                    <buy data="book.id"></buy>
+                    <wish-list data="book.id"></wish-list>
                 </div>
             </div>
         </div>
